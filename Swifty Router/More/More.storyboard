@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SIq-a8-nxF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--More-->
+        <scene sceneID="WWc-am-JHl">
+            <objects>
+                <viewController title="More" id="SIq-a8-nxF" customClass="MoreViewController" customModule="Swifty_Router" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="kiu-32-6Mt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="jSl-5g-Vfa">
+                                <rect key="frame" x="94" y="240" width="187.5" height="187.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jSl-5g-Vfa" secondAttribute="height" multiplier="1:1" id="ce1-HE-hw2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW5-P5-c45">
+                                <rect key="frame" x="187" y="435" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cW5-P5-c45" firstAttribute="top" secondItem="jSl-5g-Vfa" secondAttribute="bottom" constant="8" id="Pez-gK-fsz"/>
+                            <constraint firstItem="cW5-P5-c45" firstAttribute="centerX" secondItem="kiu-32-6Mt" secondAttribute="centerX" id="Rko-AX-Ilp"/>
+                            <constraint firstItem="jSl-5g-Vfa" firstAttribute="centerX" secondItem="kiu-32-6Mt" secondAttribute="centerX" id="UY6-xP-PAE"/>
+                            <constraint firstItem="jSl-5g-Vfa" firstAttribute="centerY" secondItem="kiu-32-6Mt" secondAttribute="centerY" id="c7R-dF-8ru"/>
+                            <constraint firstItem="jSl-5g-Vfa" firstAttribute="width" secondItem="kiu-32-6Mt" secondAttribute="width" multiplier="0.5" id="eU5-6S-3cR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3iA-Gv-Avd"/>
+                    </view>
+                    <connections>
+                        <outlet property="someLabel" destination="cW5-P5-c45" id="RfF-q8-fPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gj-ak-USS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="1024" height="1024"/>
+    </resources>
+</document>
